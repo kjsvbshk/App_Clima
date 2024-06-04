@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima360</title>
+    <link rel="stylesheet" href="./public/static/styles_pagina_principal.css">
+    <script src="./js/api/index.js"></script>
+    <script src="./js/api/Rangos.js"></script>
+    <script src="./js/api/recomendaciones.js"></script>
+</head>
+
+<body>
+    <div id="header">
+        <img class="iconHeader2 menu" src="../../static/images/menuIcon.png" alt="Menu">
+        <div id="headerTitle">
+            <img class="iconHeader1" src="../../static/images/logo2.png" alt="Logo">
+            <h1 id="title">CLIMA 360</h1>
+            <img class="iconHeader1" src="../../static/images/logo2.png" alt="Logo">
+        </div>
+        <img class="iconHeader2 buscar" src="../../static/images/lupa.png" alt="Buscar">
+    </div>    
+    <div id="contenedor">
+        <div id="caja1">
+            <h1>Clima360</h1>
+        </div>
+        <div id="caja2">
+            <h1 id="temperatura-valor"></h1>
+            <h1 id="temperatura-descripcion"></h1>
+        </div>
+        <div id="caja3">
+            <h2 id="ubicacion"></h2>
+            <img id="icono-animado" src="" height="100" width="100">
+        </div>
+        <div id="caja4">
+            <h3>Veloc. del viento</h3>
+            <h1 id="viento-velocidad"></h1>
+        </div>
+        <div id="caja5"></div>
+        <div id="caja6"></div>
+    </div>
+
+    <div id="menu">
+        <div class="iconMenu">
+            <div class="left">
+                <a href="../../public/templates/index_Calidad_Aire.html">
+                    <img id="airQA" src="../../static/images/aire.png" alt="Calidad del Aire" width="80px">
+                </a>
+                <p class="iconText">CALIDAD DEL AIRE</p>
+            </div>
+            <div class="left">
+                <a href="../../public/templates/index_rayos_uv.html">
+                    <img id="UV" src="../../static/images/rayos.png" alt="Rayos UV" width="80px">
+                </a>
+                <p class="iconText">RAYOS UV</p>
+            </div>
+        </div>
+        <div class="iconMenu">
+            <div class="right leftAligned">
+                <a href="../../public/templates/index_pronostico_Semanal.html">
+                    <img id="users" src="../../static/images/reloj.png" alt="Pronóstico Semanal" width="80px">
+                </a>
+                <p class="iconText leftAlign">PRONOSTICO SEMANAL</p>
+            </div>
+            <div class="right leftAligned">
+                <a href="../../public/templates/index_perfil.html">
+                    <img id="profile" src="../../static/images/usuario2.png" alt="Perfil" width="80px">
+                </a>
+                <p class="iconText leftAlign">PERFIL</p>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="./js/dashboard.js"></script>
+</body>
+
+</html>

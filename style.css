@@ -1,0 +1,71 @@
+/* style.css */
+
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FDFC47;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2469fe,#fef324, #fd4747);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3173ff,#fbff2d, #ff3434); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+#contenedor {
+    text-align: center;
+    max-width: 1200px; /* Establecer un ancho máximo para el contenedor */
+    margin: 0 auto; /* Centrar horizontalmente el contenedor */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    align-items: flex-start; /* Alinear los elementos al inicio del contenedor */
+}
+#caja1 {
+    position: relative;
+    top: 5px;
+    grid-column: span 3; /* Hacer que la caja 4 ocupe todo el ancho del contenedor */
+    align-self: center; /* Centrar verticalmente la caja 4 */
+    text-align: center; /* Alinear el contenido de la caja 4 al centro */
+    max-height: 5500px; /* Establecer una altura máxima para la caja 4 */
+    border: rgba(0, 0, 0, 0) 5px inset;
+    background-color: #ffffff00; /* Cambiar el color de fondo de la caja 4 */
+}
+
+
+#caja2, #caja3, #caja4 {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    border: rgba(0, 0, 0, 0) 5px inset;
+    padding: 10px; /* Añadir espaciado interno */
+}
+
+#caja5 {
+    position: relative;
+    grid-column: span 3; /* Hacer que la caja 4 ocupe todo el ancho del contenedor */
+    align-self: center; /* Centrar verticalmente la caja 4 */
+    text-align: center; /* Alinear el contenido de la caja 4 al centro */
+    max-height: 10000px; /* Establecer una altura máxima para la caja 4 */
+    border: rgba(0, 0, 0, 0) 5px inset;
+    background-color: #ffffff00; /* Cambiar el color de fondo de la caja 4 */
+}
+
+
+#caja6 {
+    grid-column: span 3; /* Hacer que la caja 5 ocupe todo el ancho del contenedor */
+    align-self: center; /* Centrar verticalmente la caja 5 */
+    text-align: center; /* Alinear el contenido de la caja 5 al centro */
+    margin: 0 auto; /* Centrar horizontalmente la caja 5 */
+    width: calc(100% - 20px); /* Hacer que la caja 5 ocupe todo el ancho menos el margen */
+    max-height: 700px; /* Establecer una altura máxima para la caja 5 */
+    background-color: #efeecb00; /* Cambiar el color de fondo de la caja 5 */
+    border: rgba(0, 0, 0, 0) 5px inset;
+}

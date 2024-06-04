@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Cuenta - Clima360</title>
+    <link rel="stylesheet" href="../../static/styles_registro.css">
+    <script type="module" src="../../firebase/firebase-config.js"></script>
+    <script type="module" src="./js/register/register.js"></script>
+</head>
+
+<body>
+    <section class="formulario-crearcuenta">
+        <div id="contenido">
+            <img id="logo1" src="../../static/images/logo1.png" alt="huh?" width="350" height="380">
+            <div class="tabla">
+                <h1 id="titulo1">Crear una nueva cuenta</h1>
+                <form id="formulario-crear">
+                    <!-- Usuario -->
+                    <div class="inputBox">
+                        <input class="ingresoDatos" type="text" id="username" name="username" placeholder="Nombre de Usuario" required>
+                        <img src="../../static/images/usuario1.png" alt="huh?" width="35px" height="28px">
+                    </div>
+                    <!-- Correo -->
+                    <div class="inputBox">
+                        <input class="ingresoDatos" type="email" id="email" name="email" placeholder="Correo Electrónico" required>
+                        <img src="../../static/images/correo.png" alt="huh?" width="35px">
+                    </div>
+                    <!-- Contraseña -->
+                    <div class="inputBox">
+                        <input class="ingresoDatos" type="password" id="password" name="password" placeholder="Contraseña" required>
+                        <img src="../../static/images/candado2.png" alt="huh?" width="35px">
+                    </div>
+                    <!-- Seleccion  de roles -->
+                    <div class="inputBox">
+                        <select class="ingresoDatos" id="role" name="role" required>
+                            <option  value="Usuario">Usuario</option>
+                            <option  value="Administrador">Administrador</option>
+                        </select>
+                        <img src="../static/images/usuario2.png" alt="Rol" width="35px">
+                    </div>
+                    
+                    <input type="submit" id="btn-signup" value="Registrarse">
+
+                </form>
+                
+                <a href="index.html">¡Ya tengo una cuenta!</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

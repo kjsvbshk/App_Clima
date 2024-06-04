@@ -1,0 +1,123 @@
+* {
+    font-family: sans-serif;
+}
+
+body {
+    width: 100%;
+    display: grid;
+    background-color: rgb(191, 208, 169);
+    background-image: url(../images/montañas.png);
+    background-size: auto;
+    
+    margin: 0px;
+    grid-template-columns: 100%;
+    grid-template-rows: 0.1fr 0.6fr 0.3fr auto;
+
+    grid-template-areas: 
+    "header"
+    "informacion"
+    "pronosticoSemanal"
+    "tablaInformacion";
+}
+
+
+/* Header */
+
+#header {
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(32, 106, 1, 1);
+    margin: 0%;
+}
+
+#headerTitle {
+    display: flex;
+    align-items: center;
+}
+
+#title {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 48px;
+    color: white;
+    margin: 20px;
+}
+
+.iconHeader1 {
+    width: 80px;
+}
+
+.iconHeader2 {
+    width: 60px;
+    padding: 0px 40px;
+}
+
+/* ///////////////////Informacion */
+
+#informacion {
+    grid-area: informacion;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+}
+
+.texto1 {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: rgba(32, 106, 1, 1);
+    padding: 0px 15px;
+    padding-bottom: 50px;
+}
+
+.informacionColumna1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* pronostico semanal */
+
+#pronosticoSemanal {   
+    grid-area: pronosticoSemanal;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 40px;
+}
+
+/* tabla de Informacion */
+
+#tablaInformacion {
+    grid-area: tablaInformacion;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 80px 40px;
+    gap: 90px;
+}
+
+.tablaIColumna1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.fondoInformacion {
+    padding: 30px;
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+    background-color: rgba(223, 195, 94, 0.68);
+}
+
+.elementosListados {
+    padding: auto 15px;
+}   

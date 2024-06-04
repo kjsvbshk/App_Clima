@@ -1,0 +1,158 @@
+* {
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+body {
+    height: 100%;
+    display: grid;
+    background-image: url(../static/images/montañas3.png);
+    background-size: cover;
+    
+    
+    margin: 0px;
+    grid-template-columns: 100%;
+    grid-template-rows: 0.1fr 0.4fr 0.5fr;
+
+    grid-template-areas: 
+    "header"
+    "accesibilidad"
+    "descripcion";
+}
+
+
+/* Header */
+
+#header {
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(32, 106, 1, 1);
+    margin: 0%;
+}
+
+#headerTitle {
+    display: flex;
+    align-items: center;
+}
+
+#title {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 48px;
+    color: white;
+    margin: 20px;
+}
+
+.iconHeader1 {
+    width: 80px;
+}
+
+.iconHeader2 {
+    width: 60px;
+    padding: 0px 40px;
+}
+
+/* accesibilidad */
+
+#accesibilidad {
+    grid-area: accesibilidad;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 50px;
+}
+
+.opcionesDatosPersonales {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(223, 195, 94, 0.68);
+    width: 20%;
+    gap: 20px;
+    padding: 10px 50px;
+    height: 100%;
+}
+
+.zonaIconoPerfil {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    color: rgba(32, 106, 1, 1);
+    gap: 50px;
+    font-weight: 500;
+}
+
+.fotoPerfil{
+    border-radius: 50%;
+}
+
+.botonRojo{
+    color: white;
+    padding: 5px 25px;
+    background-color: rgb(181, 85, 52);
+    border-radius: 20px;
+    border: solid 3px rgb(50, 85, 36);
+}
+
+.botonVerde {
+    color: white;
+    padding: 5px 25px;
+    background-color: rgb(172, 183, 98);
+    border-radius: 20px;
+    border: solid 3px rgb(50, 85, 36);
+}
+
+/* descripcion */
+
+#descripcion {
+    grid-area: descripcion;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(223, 195, 94, 0.68);
+    margin: auto;
+    margin-bottom: 70px;
+    padding: 30px;
+    width: 69%;
+    gap: 30px;
+}
+
+
+.filaDescripcionDatos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.seccion {
+    padding: 5px 15px;
+    color: white;
+    background-color: rgba(32, 106, 1, 1);
+    border-radius: 20px;
+    border: solid 3px rgb(32, 81, 11);
+}
+
+.divisionSeccion {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 40px;
+}
+
+p {
+    font-size: 24px ;
+    width: 80%;
+    text-align: center;
+    margin: 0%;
+}

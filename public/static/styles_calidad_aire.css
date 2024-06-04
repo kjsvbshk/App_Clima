@@ -1,0 +1,112 @@
+* {
+    font-family: sans-serif;
+}
+
+body {
+    width: 100%;
+    display: grid;
+    background-color: rgb(191, 208, 169);
+    background-image: url('../static/images/montañas.png');
+    background-size: auto;
+    
+    margin: 0px;
+    grid-template-columns: 100%;
+    grid-template-rows: 0.1fr 0.6fr 0.6fr auto;
+
+    grid-template-areas: 
+    "header"
+    "informacion"
+    "mapa"
+    "tabla";
+}
+
+
+/* Header title */
+
+#header {
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(32, 106, 1, 1);
+    margin: 0%;
+}
+
+#headerTitle {
+    display: flex;
+    align-items: center;
+}
+
+#title {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 48px;
+    color: white;
+    margin: 20px;
+}
+
+.iconHeader1 {
+    width: 80px;
+}
+
+.iconHeader2 {
+    width: 60px;
+    padding: 0px 40px;
+}
+
+/* Informacion */
+
+#informacion {
+    grid-area: informacion;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+}
+
+.informacionColumna {
+    
+    height: 550px;
+    padding: 30px;
+    gap: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fondoInformacion {
+    text-align: center;
+    justify-content: center;
+    background-color: rgba(223, 195, 94, 0.68);
+    width: 500px;
+    padding: 30px;
+}
+
+#subtitulo {
+    margin: 0px;
+    font-size: 24px;
+    color: rgba(32, 106, 1, 1);
+}
+
+
+/* Mapa */
+
+#mapa {
+    width: 100%;
+    grid-area: mapa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+/* tabla */
+
+#tabla {
+    width: 100%;
+    grid-area: tabla;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+}

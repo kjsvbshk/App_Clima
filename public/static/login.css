@@ -1,0 +1,98 @@
+/* General settings */
+
+*{
+    font-family: sans-serif;
+}
+body {
+    height: 100%;
+    background-image: url('../static/images/montañas3.png');
+    background-size: cover;
+    
+    display: grid;
+    grid-template-columns: 0.1fr 0.8fr 0.1fr;
+    grid-template-rows: 50px ;
+
+    grid-template-areas:
+    ".          .           ."
+    ".          content     ."
+    " footer    footer      footer";
+}
+
+/* Content */
+
+#contenido {
+    padding: 50px;
+    grid-area: content;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+/* column 1 */
+
+#logo1{
+    border-radius: 80px;
+}
+
+
+/* column 2 */
+
+.tabla {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    justify-content: space-between;
+}
+
+#titulo1 {
+    color: rgba(32, 106, 1, 1);
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+
+/* Inputs */
+
+.inputBox{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-bottom: solid 2px rgba(32, 106, 1, 1);
+}
+
+.ingresoDatos {
+    font-size: 24px;
+    color: rgba(32, 106, 1, 1);
+    background-color: transparent;
+    border-color: transparent;
+    padding: 15px 40px;
+}
+
+.ingresoDatos::placeholder {
+    color: rgba(32, 106, 1, 1);
+    border-color: transparent;
+}
+.ingresoDatos:hover{
+    background-color: rgba(32, 106, 1, 0.308);
+}
+
+.ingresoDatos:focus {
+    outline: none;
+}
+
+
+/* button */
+
+#btn-login {
+    color: white;
+    border-radius: 20px;
+    font-size: 24px;
+    padding: 15px;
+    background-color:rgba(32, 106, 1, 1);
+    border-style: none;
+}
+
+#btn-login:hover {
+    background-color: rgba(32, 106, 1, 0.308);
+}

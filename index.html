@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión - Clima360</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="./public/static/login.css">
+    <!-- <script type="module" src="./firebase/firebase-config.js"></script> -->
+</head>
+ 
+<body>
+    <section class="formulario-iniciosesion">
+        <div id="contenido">
+            <img id="logo1" src="../../static/images/logo1.png" alt="Logo" width="350" height="380">
+            <div class="tabla">
+                <h1 id="titulo1">¡Bienvenido<br>de nuevo!</h1>
+                <form id="formulario-sesion">
+                    <div class="inputBox">
+                        <input class="ingresoDatos" type="email" id="email" name="email" placeholder="Correo Electrónico" required>
+                        <img src="../../static/images/correo.png" alt="huh?" width="35px">
+                    </div>
+                    <div class="inputBox">
+                        <input class="ingresoDatos" type="password" id="password" name="password" placeholder="Contraseña" required>
+                        <img src="../../static/images/candado1.png" alt="huh?" width="35px"> 
+                    </div>
+                    <input type="submit" id="btn-login" value="Iniciar sesión">
+                </form>
+                <a href="register.html">Crear una nueva cuenta</a>
+            </div>
+        </div>
+    </section>
+    <script type="module" src="./js/login/login.js"></script>
+</body>
+
+</html>
